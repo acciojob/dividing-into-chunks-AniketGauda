@@ -15,7 +15,7 @@ const divide = (arr, n) => {
     let str="[";
     ans.forEach((e,i)=>{
         if(i!=ans.length-1)
-            str+=`[${e}], `;
+            str+=`[${e}],`;
         else
             str+=`[${e}]`;
     })
