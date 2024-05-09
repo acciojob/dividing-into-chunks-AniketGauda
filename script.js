@@ -12,7 +12,15 @@ const divide = (arr, n) => {
         tmp.push(arr[i]);
     }
     ans.push(tmp);
-    return ans;
+    let str="[";
+    ans.forEach((e,i)=>{
+        if(i!=ans.length-1)
+            str+=`[${e}], `;
+        else
+            str+=`[${e}]`;
+    })
+    str+="]";
+    return str;
 	
 };
 
